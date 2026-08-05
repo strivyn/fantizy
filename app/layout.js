@@ -1,6 +1,7 @@
 import "./globals.css";
 import { SITE } from "../lib/site";
 import { NAV } from "../components/Shell";
+import { Mark } from "../components/Mark";
 
 export const metadata = {
   metadataBase: new URL(SITE.url),
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
         <hdr><div className="w bar">
-          <a href="/" className="mark">fant<em>i</em>zy</a>
+          <a href="/" className="brand" aria-label="Fantizy home"><Mark /></a>
           <nav>{NAV.map(([h, l]) => <a key={h} href={h}>{l}</a>)}</nav>
         </div></hdr>
         <div className="w">{children}</div>

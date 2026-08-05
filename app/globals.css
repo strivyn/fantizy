@@ -8,10 +8,12 @@ body{background:var(--ink);color:var(--paper);font:15px/1.62 ui-sans-serif,syste
 .w{max-width:1080px;margin:0 auto;padding:0 32px}
 hdr{display:block;position:sticky;top:0;z-index:9;background:rgba(10,15,18,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
 hdr .bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:24px}
-.mark{font-size:20px;font-weight:700;letter-spacing:-.045em;color:var(--paper)}
-.mark em{font-style:normal;color:var(--sig)}
-nav{display:flex;gap:22px;overflow-x:auto}
-nav a{font:550 13.5px/1 inherit;font-family:inherit;color:var(--faint);background:none;border:0;padding:6px 0;cursor:pointer;white-space:nowrap;border-bottom:1.5px solid transparent}
+a{color:inherit;text-decoration:none}
+.brand{display:inline-flex;align-items:center;flex:none;color:var(--paper)}
+.brand:hover{color:#fff}
+.mark{height:23px;width:auto;display:block}
+nav{display:flex;gap:24px;overflow-x:auto}
+nav a{font:550 13.5px/1 inherit;font-family:inherit;color:var(--mute);background:none;border:0;padding:6px 0;cursor:pointer;white-space:nowrap;border-bottom:1.5px solid transparent;transition:color .15s}
 nav a:hover{color:var(--paper)} nav a.on{color:var(--paper);border-bottom-color:var(--sig)}
 .hero{padding:72px 0 0}
 body.inner .hero h1,body.inner .hero .sub{display:none} body.inner .hero{padding:24px 0 0}
